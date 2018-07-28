@@ -1,7 +1,7 @@
 plugins {
     id 'java'
+    id 'idea'
 }
-
 group 'es.joanmiralles'
 version '1.0-SNAPSHOT'
 
@@ -11,6 +11,9 @@ repositories {
     mavenCentral()
 }
 
+
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    compileOnly "org.projectlombok:lombok:1.18.2"
+    testCompileOnly "org.projectlombok:lombok:1.18.2"
 }
